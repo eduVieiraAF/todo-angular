@@ -1,0 +1,14 @@
+$primary-font: 'Roboto', sans-serif;
+
+$primary-color: royalblue;
+$secondary-color: slategray;
+$tertiary-color: white;
+
+$primary-background-color: aliceblue;
+$secondary-background-color: $tertiary-color;
+$tertiary-background-color: $primary-color;
+
+$primary-text-color: $secondary-color;
+$secondary-text-color: $tertiary-color;
+
+$danger-color: crimson;

@@ -4,11 +4,11 @@
       <input type="checkbox" [(ngModel)]="task.checked">
       <input type="text" [(ngModel)]="task.task">
       <button>
-        <img src="assets/icon/icon-trash.svg" alt="delete item" title="Delete task">
+        <img src="assets/icon/icon-trash.svg" alt="delete item" title="Delete task" (click)="deleteTask(i)">
       </button>
       <!-- {{ task | json }} -->
     </li>
   </ul>
 </section>
 <app-todo-input-add-items></app-todo-input-add-items>
-<app-todo-button-delete-all *ngIf="taskList.length"></app-todo-button-delete-all>
+<app-todo-button-delete-all *ngIf="taskList.length" (click)="deleteAll()"></app-todo-button-delete-all>

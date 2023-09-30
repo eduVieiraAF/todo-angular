@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +14,9 @@ import { HomeModule } from './modules/home/home.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    SweetAlert2Module.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
